@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>TASER</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Taser Arena — Waves + Shop + Boss</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <!-- HUD -->
+  <div id="hud">
+    <div id="hudTop">
+      <div class="hudBlock">
+        <div><span class="label">Score</span> <span id="score">0</span></div>
+        <div><span class="label">Points</span> <span id="points">0</span></div>
+      </div>
+
+      <div class="hudBlock right">
+        <div><span class="label">Wave</span> <span id="wave">1</span></div>
+        <div><span class="label">Remaining</span> <span id="remaining">0</span></div>
+        <div><span class="label">Best</span> <span id="bestWave">1</span> / <span id="highScore">0</span></div>
+      </div>
+    </div>
+
+    <!-- Bottom center health -->
+    <div id="healthWrap" aria-label="health">
+      <div id="healthBar"><div id="healthFill"></div></div>
+      <div id="healthText">HP 100 / 100</div>
+    </div>
+  </div>
+
+  <!-- Overlay (Start / Pause / Shop / Game Over / Win) -->
+  <div id="overlay" class="hidden">
+    <div id="panel">
+      <div id="panelHeader">
+        <div class="badge">AXON</div>
+        <div>
+          <h2 id="panelTitle">Menu</h2>
+          <div id="panelSubtitle"></div>
+        </div>
+      </div>
+
+      <div id="shopList"></div>
+
+      <div id="panelFooter">
+        <button id="continueBtn" class="primary">Continue</button>
+        <button id="restartBtn" class="secondary hidden">Restart</button>
+      </div>
+
+      <div id="hint">
+        Move: Arrow Keys • Fire: Hold Space • Buy: Click or press 1–9 • Pause: P / Esc
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
