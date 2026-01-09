@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>TASER</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TASER</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="hudTop">
+      <div id="hudTL" class="hudBlock">
+        <div><span class="label">Score</span> <span id="score">0</span></div>
+        <div><span class="label">Points</span> <span id="points">0</span></div>
+      </div>
+
+      <div id="hudTitle">TASER</div>
+
+      <div id="hudTR" class="hudBlock right">
+        <div><span class="label">Mode</span> <span id="modeLabel">Waves</span></div>
+        <div id="waveRow"><span class="label">Wave</span> <span id="wave">1</span></div>
+        <div id="remainingRow"><span class="label">Remaining</span> <span id="remaining">0</span></div>
+        <div><span class="label">Best</span> <span id="bestWave">1</span> / <span id="highScore">0</span></div>
+      </div>
+    </div>
+
+    <div id="healthWrap">
+      <div id="healthBar"><div id="healthFill"></div></div>
+      <div id="healthText">HP 100 / 100</div>
+    </div>
+
+    <div id="quickShop" class="collapsed">
+      <div id="quickShopHeader">
+        <div class="qsTitle">Upgrades</div>
+        <div class="qsMeta"><span class="label">Points</span> <span id="qsPoints">0</span></div>
+        <button id="qsToggle" class="qsBtn" type="button">Show</button>
+      </div>
+      <div id="quickShopList"></div>
+      <div id="quickShopHint">Buy: Click or press 1–9 • Toggle: B</div>
+    </div>
+
+    <div id="pausePanel" class="hidden">
+      <div class="ppTitle">Paused</div>
+      <div class="ppSection">
+        <div class="ppLabel">Movement / Aim</div>
+
+        <label class="ppRow">
+          <input type="radio" name="inputMode" value="keyboardAim" />
+          <div>
+            <div class="ppName">Arrow Aim</div>
+            <div class="ppDesc">Move & aim: Arrow Keys • Fire: Space</div>
+          </div>
+        </label>
+
+        <label class="ppRow">
+          <input type="radio" name="inputMode" value="mouseAim" />
+          <div>
+            <div class="ppName">Mouse Aim + WASD</div>
+            <div class="ppDesc">Move: WASD • Aim: Mouse • Fire: Left Click (Space backup)</div>
+          </div>
+        </label>
+      </div>
+
+      <div class="ppFooter">
+        <div class="ppSmall">Resume: Enter / P / Esc</div>
+      </div>
+    </div>
+
+    <div id="bottomRightControls">
+      <button id="inputToggleBtn" class="pillBtn" type="button">Switch Input</button>
+      <button id="modeToggleBtn" class="pillBtn" type="button">Mode: Waves</button>
+    </div>
+  </div>
+
+  <div id="overlay" class="hidden">
+    <div id="panel">
+      <div id="panelHeader">
+        <div class="badge">AXON</div>
+        <div>
+          <h2 id="panelTitle">Menu</h2>
+          <div id="panelSubtitle"></div>
+        </div>
+      </div>
+
+      <div id="panelBody">
+        <div class="hintSmall">Press Start to begin.</div>
+      </div>
+
+      <div id="panelFooter">
+        <button id="continueBtn" class="primary" type="button">Start</button>
+        <button id="restartBtn" class="secondary hidden" type="button">Restart</button>
+      </div>
+
+      <div id="hint">
+        Toggle Shop: B • Pause: P / Esc • Resume/Confirm: Enter
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
