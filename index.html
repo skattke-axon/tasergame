@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>TASER</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TASER</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <canvas id="game"></canvas>
+
+  <div id="hud">
+    <div id="hudTop">
+      <div id="hudTL" class="hudBlock">
+        <div><span class="label">Score</span> <span id="score">0</span></div>
+        <div><span class="label">Points</span> <span id="points">0</span></div>
+      </div>
+
+      <div id="hudTitle">TASER</div>
+
+      <div id="hudTR" class="hudBlock right">
+        <div><span class="label">Mode</span> <span id="modeLabel">Waves</span></div>
+        <div id="waveRow"><span class="label">Wave</span> <span id="wave">1</span></div>
+        <div id="remainingRow"><span class="label">Remaining</span> <span id="remaining">0</span></div>
+        <div><span class="label">Best</span> <span id="bestWave">1</span> / <span id="highScore">0</span></div>
+      </div>
+    </div>
+
+    <div id="healthWrap">
+      <div id="healthBar"><div id="healthFill"></div></div>
+      <div id="healthText">HP 100 / 100</div>
+    </div>
+
+    <!-- Skinny permanent left column -->
+    <nav id="upgradeColumn" aria-label="Upgrades">
+      <div id="upgradeColumnHeader">
+        <div class="ucTitle">Upgrades</div>
+        <div class="ucPts"><span id="ucPoints">0</span></div>
+      </div>
+      <div id="upgradeItems"></div>
+    </nav>
+
+    <div id="bottomRightControls">
+      <button id="inputToggleBtn" class="pillBtn" type="button">Switch Input</button>
+      <button id="modeToggleBtn" class="pillBtn" type="button">Mode: Waves</button>
+      <button id="autoFireBtn" class="pillBtn" type="button">Auto Fire: Off</button>
+    </div>
+  </div>
+
+  <!-- Simple overlay for Start / Pause / Intermission / End -->
+  <div id="overlay" class="hidden" role="dialog" aria-modal="true">
+    <div id="panel">
+      <div id="panelBodySimple">
+        <h1 id="panelTitle">TASER</h1>
+        <div id="panelSubtitle" class="muted"></div>
+      </div>
+      <div id="panelFooterSimple">
+        <button id="continueBtn" class="bigBtn primary" type="button">Start</button>
+        <button id="restartBtn" class="bigBtn secondary hidden" type="button">Restart</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./game.js"></script>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
